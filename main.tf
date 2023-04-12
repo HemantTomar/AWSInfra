@@ -9,9 +9,6 @@ resource "aws_instance" "example" {
   tags = {
     Name = "example-instance"
   }
-
- 
-  security_groups = ["jump-sg"]
 }
 
 
