@@ -22,4 +22,9 @@ jobs:
           aws-region: ap-south-1
           role-to-assume: arn:aws:iam::539994560210:role/AWS_INFRA_Role
           role-session-name: GitHubActions
+      - name: Run Terraform commands
+        run: |
+          terraform init
+          terraform apply -auto-approve
+
       
