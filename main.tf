@@ -11,7 +11,7 @@ resource "aws_instance" "example" {
   }
 
  
-  security_group = [aws_security_group.example.id]
+  security_groups = [aws_security_group.example.id]
 }
 
 resource "aws_security_group" "example" {
