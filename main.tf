@@ -11,9 +11,7 @@ resource "aws_instance" "example" {
   }
 
  
-  security_groups = [aws_security_group.example.id]
+  security_groups = ["jump-sg"]
 }
 
-resource "aws_security_group" "example" {
-  name_prefix = "jump-sg"
-}
+
