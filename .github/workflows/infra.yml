@@ -15,8 +15,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::539994560210:role/AWS_INFRA_Role
           role-session-name: samplerolesession
-          aws-region: ap-south-1
-          id: assumed_role
+          aws-region: ap-south-1          
       - name: Terraform init
         run: terraform init
       - name: Terraform validate
