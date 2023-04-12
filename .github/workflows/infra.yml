@@ -13,7 +13,8 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam:ap-south-1:539994560210:role/AWS_INFRA_Role
+          role-to-assume: arn:aws:iam::539994560210:role/AWS_INFRA_Role
+          aws-region: ap-south-1
         id: assumed_role
       - name: Terraform init
         run: terraform init
