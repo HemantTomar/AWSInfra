@@ -19,7 +19,7 @@ jobs:
      uses: aws-actions/configure-aws-credentials@master
      with:
        role-to-assume: arn:aws:iam::539994560210:role/AWS_INFRA_Role
-       role-session-name: samplerolesession
+       role-session-name: githubactions
        aws-region: ${{env.AWS_DEFAULT_REGION}}
 
    - name: Checkout
