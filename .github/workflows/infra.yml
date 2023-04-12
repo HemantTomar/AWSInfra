@@ -27,4 +27,4 @@ jobs:
 
    - name: Some AWS commands
      run: |
-       aws --region ap-south-1 ……
+       aws --region ap-south-1
