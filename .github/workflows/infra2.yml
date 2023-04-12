@@ -23,7 +23,7 @@ jobs:
        aws-region: ${{env.AWS_DEFAULT_REGION}}
 
    - name: Checkout
-     uses: actions/checkout@v2
+     uses: actions/checkout@master
 
    - name: Some AWS commands
      run: |
